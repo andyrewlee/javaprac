@@ -6,7 +6,7 @@ public class LinearSearch
   {
     Scanner keyboard = new Scanner(System.in);
 
-    System.out.println("What number do you want to look for in my secrety array?");
+    System.out.println("What number do you want to look for in my secret array?");
     int numToLookFor = keyboard.nextInt();
 
     // array doesn't have to be sorted
