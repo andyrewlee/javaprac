@@ -22,17 +22,17 @@ public class NinjaGold
       if(formattedChoice == 'F')
       {
         // farm earns 10 - 20 golds
-        gold = new Random().nextInt(10) + 20;
+        gold = new Random().nextInt(11) + 10;
       }
       else if (formattedChoice == 'C' && choice.length() == 4)
       {
         // cave earns 5 - 10 golds
-        gold = new Random().nextInt(5) + 5;
+        gold = new Random().nextInt(6) + 5;
       }
       else if (formattedChoice == 'H')
       {
         // house earns 2 - 5 golds
-        gold = new Random().nextInt(2) + 3;
+        gold = new Random().nextInt(4) + 2;
       }
       else if (formattedChoice == 'C')
       {
@@ -57,18 +57,15 @@ public class NinjaGold
 
         if(gold > 0)
         {
-          System.out.println("You chose " + choice +
-                             " and earned " + gold);
+          System.out.println("You chose " + choice + " and earned " + gold);
         }
         else if(gold < 0)
         {
-          System.out.println("You chose " + choice +
-                             " and lost " + gold);
+          System.out.println("You chose " + choice + " and lost " + gold);
         }
         else
         {
-          System.out.println("You chose " + choice +
-                             "and didn't earn anything");
+          System.out.println("You chose " + choice + " and didn't earn anything");
         }
         System.out.println("You currently have " + totalGold + " gold");
       }
